@@ -4,7 +4,7 @@ while(number>0)
 {
     var remainder=number%10;
     reverse=reverse*10+remainder;
-    number=number/10;
+    number= parseInt (number/10);
     
 }
-alert("Reverse number",reverse);
+console.log("Reverse number",+reverse);

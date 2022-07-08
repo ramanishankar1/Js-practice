@@ -1,15 +1,31 @@
-var c=0;
-var a,temp;
-var n=153;
-while(n>0)
-{
-   a=n%10;
-   n=n/10;
-   c=c+(a*a*a);
+var number=153;
+var temp;
+temp=number;
+var flag=0;
+while(temp>0){
+   flag=flag+1;
+   var lastdigit=temp%10;
+   lastdigit=temp-lastdigit;
+   temp=temp/10;
 }
-if(temp===c){
-   console.log("N is  an Armstrong number");
+temp=number;
+sum=0;
+while(temp>0){
+   var lastdigit=temp%10;
+   lastdigit=temp-lastdigit;
+   temp=temp/10;
+
+var individualultiplication=1;
+
+for(i=0;i<=flag;i++)
+   individualultiplication=individualultiplication*lastdigit   
+
+}
+sum=sum+individualultiplication;
+if(number==sum){
+   console.log("It is an armstrong number");
 }
 else{
-   console.log("N is not an armstrong number");
+   console.log("It is not an armstrong number");
 }
+
